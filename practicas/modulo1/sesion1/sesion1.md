@@ -4,7 +4,7 @@
  
  Creamos un script que inicialice el sistema necesario para prácticas.
 
-!()[imgs/script.png]
+![img](imgs/script.png)
 
 ###Gestión de usuarios
 Los archivos que contienen información acerca de los usuarios son:
@@ -19,9 +19,9 @@ Si no indica una configuración para el usuario, este los toma por defecto de lo
 
 A continuación creamos una cuenta para el usuario *pepe* y vemos los archivos /etc/passwd y /etc/group
 
-![img](imgs/adduser1.png)
-![img](imgs/adduser2.png)
-![img](imgs/adduser3.png)
+![img](imgs/useradd1.png)
+![img](imgs/useradd2.png)
+![img](imgs/useradd3.png)
 
 En este punto faltaría una contraseña para el usuario pepe que se consigue con el comando passwd.
 
@@ -36,6 +36,7 @@ Algunas características que se pueden gestionar a la hora de usar el comando *u
 .. -U, --usergroup | crea un grupo con el nombre del usuario
 
 Cuando se quiere crear un usuario con los valores por defecto pero necesitamos alguna pequeña modificación podemos usar la orden
+
 ![](imgs/useradd4.png)
 
 Si en algún momento queremos eliminar un usuario debemos de usar la orden *userdel*. En este caso si la usamos sin parámetros nos dejará su carpeta personal. Esta orden por si sola elimina el usuario de los archivos de gestión de usuario( passwd,shadow y group). En caso de querer eliminarlo del sistema junto con su carpeta y archivos contenidos.
@@ -54,9 +55,8 @@ Para establecer una contraseña el usuario *root* puede hacerlo sobre cualquier 
 
 ![](imgs/cambiarPass.png)
 
-Las contraseñas se almacenan en el sistema operativo en forma de hash(resumen) dentro del archivo */etc/passwd*. Para protegerlo de que lo pueda leer cualquier usuario se le quitan los privilegios.
+Las contraseñas se almacenan en el sistema operativo en forma de hash(resumen) dentro del archivo */etc/shadow*. Para protegerlo de que lo pueda leer cualquier usuario se le quitan los privilegios.
 
-![](imgs/passwd.png)
 
 ###Parámetros de configuración de una cuenta
 
@@ -101,7 +101,7 @@ Dentro del sistema de archivos existe una carpeta en la raiz que es */tmp*. En e
 ####Acceso a la información del SA
 Para conocer los sistemas de archivos que se montan al inicio en nuestro sistema miramos el archivo */etc/fstab/* (*/etc/mtab/* muestra los montados en este momento y es la salida de la orden *mount*)
 
-![](imgs/fstab)
+![](imgs/fstab.png)
 
 * El primer campo que aparece es el SA a montar puede ser un dispositivo especial de bloque o un SA remoto 
 * El segundo indica el punto de montaje del SA
