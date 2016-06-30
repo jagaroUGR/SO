@@ -87,10 +87,12 @@ Otra característica interesante es que se puede interactuar. Para ello podemos 
 * N : ordenación según PID
 * P : ordenación según uso de CPU
 * n : elegir el número de procesos a mostrar
+* q : salir 
 
 
 ###g)Orden mpstat
-* q : salir 
+
+
 
 
 
