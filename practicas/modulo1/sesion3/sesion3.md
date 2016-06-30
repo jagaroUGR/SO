@@ -71,8 +71,26 @@ $ps aux --sort=-pcpu,-pmem
 ```
 
 
-###Orden top
+###f)Orden top
 
+Utilidad que muestra en tiempo real la metainformación de los procesos en ejecución. Además de indicar en la primera sección información como la que devuelve *uptime*, El número de tareas, la utilización de la CPU,memoria usada y libre, memoria de swap libre y usada. También enseña la memoria física que está libre pero la usa el núcleo como buffer/caché para agilizar los procesos( última columna de la primera línea), y la cantidad de memoria que se puede usar antes de hacer swapping(última columna segunda fila, avail Mem).
+
+La parte de abajo muestra lo mismo que la orden ps.
+
+![](imgs/top.png)
+
+
+Otra característica interesante es que se puede interactuar. Para ello podemos usar las teclas
+
+* r : cambiar la prioridad de algún proceso
+* k : terminar un proceso
+* N : ordenación según PID
+* P : ordenación según uso de CPU
+* n : elegir el número de procesos a mostrar
+
+
+###g)Orden mpstat
+* q : salir 
 
 
 
