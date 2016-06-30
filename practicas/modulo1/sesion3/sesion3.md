@@ -41,9 +41,37 @@ Utilidad para ver el árbol de procesos en ejecución en un instante dado.
 Sirve para mostrar los procesos que se están ejecujando en un instante. Uno de las formas mas usadas es 
 
 ```bash
-ps aux
+$ps aux
+
+Muestra todos los procesos que se están ejecutando en un instante con sintaxis BSD
+
+a: lista los procesos de todos que se están ejecutando en una terminal
+x: muestra los procesos que no tienen asignada una tty, incluidos los que tienen pts.
+ax: muestra todos los procesos en un terminal(combinación de ambos parámetros)
+u: formato de salida usuario. Es decir, USER,pid,...
+
+$ps -ef
+
+Muestra todos los procesos corriendo con una sintaxis estándar.
+
+$ps T
+
+Muestra todos los procesos corrindo en este terminal
+
+$ps r
+
+Muestra todos los procesos corriendo
+
+$ps -C comando
+
+Muestra la información del comando. En caso de que no exista, devuelve una lista vacía.
+
+$ps aux --sort=-pcpu,-pmem
+
 ```
 
+
+###Orden top
 
 
 
