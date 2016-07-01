@@ -1,0 +1,7 @@
+PATH=/home/javier/.nvm/versions/node/v5.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/javier/Universidad/SO/practicas/modulo1/sesion4:/home/javier/Universidad/SO/practicas/modulo1/sesion4
+
+
+
+*/1 * * * * for i in `seq 1 20`; do touch /tmp/varios/core$i; done
+*/1 * * * * listaCores.sh
+*/1 * * * * reducelista.sh

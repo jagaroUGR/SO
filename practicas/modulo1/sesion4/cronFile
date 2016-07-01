@@ -1,0 +1,17 @@
+#Archivo crontab. Esta línea la omite. Para activar alguna orden descomentar
+#Para establecer este archivo como el que usar crontab escribe crontab cronFile
+#Para ver el archivo crontab activo escribe crontab -l
+#Para eliminar este archivo crontab escribe crontab -r
+
+#variable que usarán los archivos. Crontab no puede convertir en string la asignación $ruta=$HOME/Universidad/SO/practicas/modulo1/sesion4/ pero sí entiende ~ 
+
+#Ejecuta cada minuto el ejecutable padre.h
+# */1 * * * * ~/Universidad/SO/practicas/modulo1/sesion4/padre.sh
+
+
+PATH=~/Universidad/SO/practicas/modulo1/sesion4/
+
+#Ejecuta cada minuto listaCores y reducelista
+*/1 * * * * for i in `seq 1 20`; do touch /tmp/varios/core$i; done
+*/1 * * * * ~/Universidad/SO/practicas/modulo1/sesion4/listaCores.sh
+*/1 * * * * ~/Universidad/SO/practicas/modulo1/sesion4/reducelista.sh
