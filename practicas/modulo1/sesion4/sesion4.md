@@ -25,7 +25,7 @@ Ejemplo básico para generar la ejecución de un script en un momento determinad
 $at \[-f script\] TIME
 
 Sirve para establecer a la hora TIME la ejecución del script. Si no se aporta un script la entrada será por entrada estándar.
-
+```
 Formas de expresar TIME:
 
 * midnight;noon ( a medianoche o media mañana)
@@ -46,7 +46,7 @@ En el caso de elegir una fecha pasada especificando hora y mes día año, nos in
 
 ![](imgs/at5.png)
 
-```
+
 
 ###Entorno de ejecución de órdenes con at 
 
